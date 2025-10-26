@@ -1,16 +1,23 @@
-<manifest package="com.example.openrouter" xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akitik.aiza">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".OpenRouterApplication"
-        android:label="OpenRouterClient"
         android:allowBackup="false"
+        android:label="OpenRouterClient"
         android:theme="@style/Theme.OpenRouter">
-        <activity android:name=".MainActivity"
-            android:exported="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.OpenRouter">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>

@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 
+
 @Composable
 fun ChatScreen(vm: ChatViewModel = hiltViewModel()) {
     val state by vm.state.collectAsState()
